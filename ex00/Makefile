@@ -6,7 +6,7 @@
 #    By: besalort <besalort@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/26 13:39:37 by besalort          #+#    #+#              #
-#    Updated: 2024/07/26 13:40:02 by besalort         ###   ########.fr        #
+#    Updated: 2024/08/12 18:20:49 by besalort         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = Animal
 
 SRC = ./main.cpp \
 	./srcs/Animal.cpp \
+	./srcs/Dog.cpp \
 
 CC =	c++
 

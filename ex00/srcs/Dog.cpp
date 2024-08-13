@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 14:37:20 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/26 15:02:52 by besalort         ###   ########.fr       */
+/*   Updated: 2024/08/12 18:22:39 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,20 @@ Dog::Dog() : Animal() {
 }
 
 Dog::~Dog() {
-	std::cout << "\033[1;31m" << "Animal " << this->type << " is destroyed\033[0m" << std::endl;
+	std::cout << "\033[1;31m" << "Dog " << this->type << " is destroyed\033[0m" << std::endl;
+}
+
+Dog::Dog(const Dog &dog) : Animal(){
+	type = dog.type;
+	std::cout << "\033[1;32m" << "Dog " << this->type << " is created by copy\033[0m" << std::endl;
+
+}
+
+Dog& Dog::operator=(const Dog &dog) {
+	std::cout << "\033[1;33m" << "Dog " << this->type << " = " << dog.type << "\033[0m" << std::endl;
+	return (*this);
+}
+
+void Dog::makeSound() {
+	std::cout << "Bark Bark Wouf Wouf AOUUUUUUUUUUUUUUUUUUUUUUUU" << std::endl;
 }

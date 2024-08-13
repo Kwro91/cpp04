@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 14:33:08 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/26 15:06:17 by besalort         ###   ########.fr       */
+/*   Updated: 2024/08/12 18:14:34 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Dog : public Animal {
 		Dog(const Dog &dog);
 		Dog & operator = (const Dog &dog);
 
-		makeSound();
+		virtual void makeSound();
 };
 
 #endif

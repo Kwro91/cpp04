@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 13:36:22 by besalort          #+#    #+#             */
-/*   Updated: 2024/07/26 14:23:57 by besalort         ###   ########.fr       */
+/*   Updated: 2024/08/12 18:16:14 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,8 @@ Animal& Animal::operator=(const Animal &animal){
 	std::cout << "\033[1;33m" << "Animal " << this->type << " = " << animal.type << "\033[0m" << std::endl;
 	type = animal.type;
 	return (*this);
+}
+
+void Animal::makeSound() {
+	std::cout << "[...no sound...]" << std::endl;
 }
