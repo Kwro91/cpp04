@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/26 13:36:16 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/13 14:56:53 by besalort         ###   ########.fr       */
+/*   Created: 2024/08/13 14:25:55 by besalort          #+#    #+#             */
+/*   Updated: 2024/08/13 14:50:23 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/Animal.hpp"
-#include "includes/Dog.hpp"
-#include "includes/Cat.hpp"
+#include "Animal.hpp"
 
-void	hearAnimal(Animal& x) {
-	x.makeSound();	
-}
+#ifndef CAT_HPP
+#define CAT_HPP
 
-int main () {
-	Animal	first("Chieng");
-	Animal	second = first;
-	Animal	third("Cat");
-	third = first;
+class Cat : public Animal {
+	private :
 
-	Dog		doggo;
-	Cat		yuumi;
-	hearAnimal(first);
-	hearAnimal(doggo);
-	hearAnimal(yuumi);
-}
+	protected :
+
+	public :
+		Cat();
+		~Cat();
+		Cat(const Cat &cat);
+		Cat & operator = (const Cat &cat);
+
+		virtual void makeSound();
+};
+
+#endif
