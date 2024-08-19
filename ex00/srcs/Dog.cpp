@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 14:37:20 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/12 18:22:39 by besalort         ###   ########.fr       */
+/*   Updated: 2024/08/19 15:16:58 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ Dog& Dog::operator=(const Dog &dog) {
 	return (*this);
 }
 
-void Dog::makeSound() {
+void Dog::makeSound() const {
 	std::cout << "Bark Bark Wouf Wouf AOUUUUUUUUUUUUUUUUUUUUUUUU" << std::endl;
 }

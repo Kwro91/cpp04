@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 13:36:20 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/12 18:15:50 by besalort         ###   ########.fr       */
+/*   Updated: 2024/08/19 14:42:49 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,12 @@ class Animal {
 	public :
 		Animal();
 		Animal(std::string type);
-		~Animal();
+		virtual ~Animal();
 		Animal(const Animal &animal);
 		Animal & operator = (const Animal &animal);
 
-		virtual void makeSound();
+		virtual void makeSound() const ;
+		std::string getType() const;
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 14:25:36 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/13 14:49:50 by besalort         ###   ########.fr       */
+/*   Updated: 2024/08/19 15:16:53 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,6 @@ Cat& Cat::operator=(const Cat &cat) {
 	return (*this);
 }
 
-void Cat::makeSound() {
+void Cat::makeSound() const {
 	std::cout << "Meow !" << std::endl;
 }

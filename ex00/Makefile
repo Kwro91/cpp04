@@ -6,7 +6,7 @@
 #    By: besalort <besalort@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/26 13:39:37 by besalort          #+#    #+#              #
-#    Updated: 2024/08/13 14:56:19 by besalort         ###   ########.fr        #
+#    Updated: 2024/08/19 14:35:13 by besalort         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,8 @@ SRC = ./main.cpp \
 	./srcs/Animal.cpp \
 	./srcs/Dog.cpp \
 	./srcs/Cat.cpp \
+	./srcs/WrongAnimal.cpp \
+	./srcs/WrongCat.cpp \
 
 CC =	c++
 
