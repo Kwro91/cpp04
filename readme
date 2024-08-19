@@ -1,0 +1,16 @@
+This is the module 04 of CPP at 42.
+
+Ex 00 : Learning Polymorphism, Derived class ( virtual keyword )
+
+virtual is a keyword that indicate processor a function member is a method (member class function dynamically allowed).
+Basically it indicate the linkage will no more be static but dynamic and the resolution of function will be at runtime.
+With this keyword, during the execution it will check the type of the object because its dynamic. So we can have a function that change execution depending on type of object or his inheritance.
+
+					Virtual Rules :
+- Virtual functions must be members of some class.
+- Virtual functions cannot be static members.
+- They are accessed through object pointers. (Look main.cpp)
+- They can be a friend of another class. (Not member of class but have access to private and protected members -> https://www.geeksforgeeks.org/friend-class-function-cpp/)
+- A virtual function must be defined in the base class, even though it is not used.
+- The prototypes of a virtual function of the base class and all the derived classes must be identical. If the two functions with the same name but different prototypes, C++ will consider them as the overloaded functions.
+- We cannot have a virtual constructor, but we can have a virtual destructor (useful when you want to make sure you're dynamic objects will be free at the begining and not in the middle of static objects).
