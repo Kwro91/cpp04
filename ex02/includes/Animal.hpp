@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 13:36:20 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/26 17:25:29 by besalort         ###   ########.fr       */
+/*   Updated: 2024/08/26 17:30:53 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ class Animal {
 		Animal(const Animal &animal);
 		Animal & operator = (const Animal &animal);
 
-		virtual void makeSound() const ;
-		std::string getType() const;
+		virtual void makeSound() const = 0; // = 0; here is a way to make this function pure virtual. If a class have at least one pure virtual function, it make a class abstract.
+		std::string getType() const;        // An abstract class cannot be instanciate by itself. The pure virtual function have to be override.
 };
 
 #endif

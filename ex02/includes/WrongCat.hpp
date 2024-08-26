@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   WrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/13 14:25:55 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/22 17:15:01 by besalort         ###   ########.fr       */
+/*   Created: 2024/08/19 14:26:11 by besalort          #+#    #+#             */
+/*   Updated: 2024/08/19 14:37:36 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
-#ifndef CAT_HPP
-#define CAT_HPP
+#ifndef WRONGCAT_HPP
+#define WRONGCAT_HPP
 
-class Cat : public Animal {
+class WrongCat : public WrongAnimal {
 	private :
-		Brain *brain;
 
 	protected :
 
 	public :
-		Cat();
-		~Cat();
-		Cat(const Cat &cat);
-		Cat & operator = (const Cat &cat);
+		WrongCat();
+		~WrongCat();
+		WrongCat(const WrongCat &wcat);
+		WrongCat & operator = (const WrongCat &wcat);
 
 		void makeSound() const;
 };

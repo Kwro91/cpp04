@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 13:36:16 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/23 16:35:52 by besalort         ###   ########.fr       */
+/*   Updated: 2024/08/26 17:34:06 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@
 
 int main()
 {
+	// Animal notInstanciable;
+	
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
 

@@ -14,3 +14,7 @@ With this keyword, during the execution it will check the type of the object bec
 - A virtual function must be defined in the base class, even though it is not used.
 - The prototypes of a virtual function of the base class and all the derived classes must be identical. If the two functions with the same name but different prototypes, C++ will consider them as the overloaded functions.
 - We cannot have a virtual constructor, but we can have a virtual destructor (useful when you want to make sure you're dynamic objects will be free at the begining and not in the middle of static objects).
+
+Ex 02 : Abstract classes
+
+Setting a pure virtual function in a class make it abstract and not instanciable if the function is not override. (Look Animal.hpp to see how to declare a pure virtual function)
