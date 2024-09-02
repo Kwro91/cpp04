@@ -18,3 +18,8 @@ With this keyword, during the execution it will check the type of the object bec
 Ex 02 : Abstract classes
 
 Setting a pure virtual function in a class make it abstract and not instanciable if the function is not override. (Look Animal.hpp to see how to declare a pure virtual function)
+
+
+Ex 03 : Interfaces
+
+https://stackoverflow.com/questions/461203/when-to-use-virtual-destructors (virtual destructor)
