@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 13:36:16 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/19 15:25:24 by besalort         ###   ########.fr       */
+/*   Updated: 2024/11/18 16:23:16 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int main()
 	std::cout << "j type: " << j->getType() << " " << std::endl;
 	std::cout << "i type: " << i->getType() << " " << std::endl;
 	i->makeSound(); //will output the cat sound!
-	j->makeSound();
+	j->makeSound(); //will output the dog sound!
 	meta->makeSound();
 
 	delete meta;

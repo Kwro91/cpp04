@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 13:36:20 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/26 17:25:29 by besalort         ###   ########.fr       */
+/*   Updated: 2024/11/18 18:04:00 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #ifndef ANIMAL_HPP
 #define ANIMAL_HPP
 
+#include "Color.hpp"
 
 class Animal {
 	private :

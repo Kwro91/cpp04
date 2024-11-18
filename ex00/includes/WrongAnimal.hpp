@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 13:49:06 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/19 14:37:27 by besalort         ###   ########.fr       */
+/*   Updated: 2024/11/18 16:19:30 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #ifndef WRONGANIMAL_HPP
 #define WRONGANIMAL_HPP
 
+#include "Color.hpp"
 
 class WrongAnimal {
 	private :

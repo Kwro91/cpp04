@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/19 13:47:19 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/19 15:26:06 by besalort         ###   ########.fr       */
+/*   Updated: 2024/11/18 16:19:12 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,20 @@
 
 WrongAnimal::WrongAnimal() {
 	this->type = "WrongDefault";
-	std::cout << "\033[1;32m" << "WrongAnimal " << this->type << " is created\033[0m" << std::endl;
+	std::cout << GREEN << "WrongAnimal " << this->type << " is created" << WHITE << std::endl;
 }
 
 WrongAnimal::~WrongAnimal() {
-	std::cout << "\033[1;31m" << "WrongAnimal " << this->type << " is destroyed\033[0m" << std::endl;
+	std::cout << RED << "WrongAnimal " << this->type << " is destroyed" << WHITE << std::endl;
 }
 
 WrongAnimal::WrongAnimal(const WrongAnimal &wanimal) {
 	type = wanimal.type;
-	std::cout << "\033[1;32m" << "WrongAnimal " << this->type << " is created by copy\033[0m" << std::endl;
+	std::cout << GREEN << "WrongAnimal " << this->type << " is created by copy\033[0m" << std::endl;
 }
 
 WrongAnimal& WrongAnimal::operator=(const WrongAnimal &wanimal){
-	std::cout << "\033[1;33m" << "WrongAnimal " << this->type << " = " << wanimal.type << "\033[0m" << std::endl;
+	std::cout << YELLOW << "WrongAnimal " << this->type << " = " << wanimal.type << WHITE << std::endl;
 	type = wanimal.type;
 	return (*this);
 }

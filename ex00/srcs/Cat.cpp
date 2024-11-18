@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/13 14:25:36 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/19 15:16:53 by besalort         ###   ########.fr       */
+/*   Updated: 2024/11/18 16:17:15 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,21 @@
 
 Cat::Cat() : Animal() {
 	this->type = "Cat";
-	std::cout << "\033[1;32m" << "Animal " << this->type << " is created\033[0m" << std::endl;
+	std::cout << GREEN << "Animal " << this->type << " is created" << WHITE << std::endl;
 }
 
 Cat::~Cat() {
-	std::cout << "\033[1;31m" << "Cat " << this->type << " is destroyed\033[0m" << std::endl;
+	std::cout << RED << "Cat " << this->type << " is destroyed" << WHITE << std::endl;
 }
 
 Cat::Cat(const Cat &cat) : Animal(){
 	type = cat.type;
-	std::cout << "\033[1;32m" << "Cat " << this->type << " is created by copy\033[0m" << std::endl;
+	std::cout << GREEN << "Cat " << this->type << " is created by copy" << WHITE << std::endl;
 
 }
 
 Cat& Cat::operator=(const Cat &cat) {
-	std::cout << "\033[1;33m" << "Cat " << this->type << " = " << cat.type << "\033[0m" << std::endl;
+	std::cout << YELLOW << "Cat " << this->type << " = " << cat.type << WHITE << std::endl;
 	return (*this);
 }
 

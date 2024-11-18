@@ -6,7 +6,7 @@
 /*   By: besalort <besalort@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/26 14:37:20 by besalort          #+#    #+#             */
-/*   Updated: 2024/08/19 15:16:58 by besalort         ###   ########.fr       */
+/*   Updated: 2024/11/18 16:17:36 by besalort         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,21 @@
 
 Dog::Dog() : Animal() {
 	this->type = "Dog";
-	std::cout << "\033[1;32m" << "Animal " << this->type << " is created\033[0m" << std::endl;
+	std::cout << GREEN << "Animal " << this->type << " is created" << WHITE << std::endl;
 }
 
 Dog::~Dog() {
-	std::cout << "\033[1;31m" << "Dog " << this->type << " is destroyed\033[0m" << std::endl;
+	std::cout << RED << "Dog " << this->type << " is destroyed" << WHITE << std::endl;
 }
 
 Dog::Dog(const Dog &dog) : Animal(){
 	type = dog.type;
-	std::cout << "\033[1;32m" << "Dog " << this->type << " is created by copy\033[0m" << std::endl;
+	std::cout << GREEN << "Dog " << this->type << " is created by copy" << WHITE << std::endl;
 
 }
 
 Dog& Dog::operator=(const Dog &dog) {
-	std::cout << "\033[1;33m" << "Dog " << this->type << " = " << dog.type << "\033[0m" << std::endl;
+	std::cout << YELLOW << "Dog " << this->type << " = " << dog.type << WHITE << std::endl;
 	return (*this);
 }
 
